@@ -1,1 +1,136 @@
-<h1>hello</h1>
+
+<html>
+
+<head>
+    <title>Mini Radio (ESP32 SI4732 Receiver) - Official Website</title>
+    <meta name="description" content="Mini Radio: An ESP32-based radio All Band and SSB/FM/AM mode, providing a clear and convenient radio listening experience.">
+    <meta name="keywords" content="ESP32,radio, LSB/USB/AM/FM, HF, Mini Radio,HF radio, open source project, radio receiver">
+    <style>
+        body {
+            margin:0;
+            padding:0;
+            text-align: center;
+        }
+
+        .caption {
+            padding: 50px 0;
+            text-align: center;
+            font-size: 50px;
+
+        }
+
+        .product {
+            height: 130px;
+            margin-bottom:150px;
+        }
+
+        .button {
+            padding: 5px 8px;
+            border-radius: 5px;
+            color: white;
+            background-color: #5290f9;
+            text-decoration: none;
+            transition: color 0.3s ease, font-weight 0.3s ease;
+        }
+
+        .button_big {
+            padding: 5px 8px;
+            font-size: 30px;
+        }
+
+        .button:hover {
+            color: white;
+            background-color: #649bfa;
+        }
+
+        .bug {
+            margin: 30px;
+        }
+
+        .info {
+            background-color: #5290f9;
+            padding: 50px 0;
+        }
+
+        .info>div {
+            width: 600px;
+            text-align: left;
+            margin: auto;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="caption">Mini Radio (ESP32 Si4372 Receiver)</div>
+    <div class="product">
+        <img src="radio.png" width="400px" />
+
+        </br>
+        <p>
+        <h3>The factory default firmware may be the official or G8PTN firmware. If necessary, please download and upgrade the latest firmware yourself.</h3>
+        </p>
+    </div>
+
+
+    <div class="fireware">
+        <span><a class="button" href="https://groups.io/g/mini-radio" target="_blank">Chat Group</a></span>
+        <span><a class="button" href="https://oshwhub.com/sunnygold/esp32s3-si4732-shou-yin-ji" target="_blank">Open Source</a></span>
+        <span><a class="button" href="MiniRadio_2025_3_2.zip" target="_blank">Download Firmware(official)</a></span>
+        <span><a class="button" href="https://github.com/G8PTN/ATS_MINI" target="_blank">Download Firmware(G8PTN)</a></span>
+        <span><a class="button" href="https://dl.espressif.com/public/flash_download_tool.zip" target="_blank">Flash Download Tool.zip(Window 10)</a></span>
+
+    </div>
+
+    </p>
+    <div class="info">
+        <div>
+            <span><b>Features:</b></span>
+            <p>1. ESP32-S3 main control, 1.9-inch IPS HD color screen</p>
+            <p>2. Use SI4732 DSP chip, support broadcasting full band, LSB USB AM FM mode.</p>
+            <p>3. Built-in 800 mah battery, battery life of about 10 hours or more.</p>
+            <p>4. Equipped with 70cm portable rod antenna can be used for receiving.</p>
+            <p>5. Shell 3D printed PETG.</p>
+            </div>
+        <div>
+        
+        <div>
+            <span><b>Parameters:</b></span>
+            <p>Main control: ESP-32-S3</p>
+            <p>Receiving frequency band: HF SW MW VHF
+            <p>Screen: 1.9inch, 170*320
+            <p>Charging interface: TYPE-C (can not use fast charge)
+            <p>Audio interface: 3.5mm stereo</p>
+            <p>Battery capacity: 800ma</p>
+            <p>Body size: 7.3*3.2*1.2</p>
+            <p>Body weight: 54g.</p>
+        </div>
+        
+
+         <div>
+            <span><b>Operation Guide:</b></span>
+            <p>1. Double-click the button on the home screen to enter the menu</p>
+            <p>2. On the menu page, rotate the knob to switch the menu and mode, etc. Click again to "Confirm".</p>
+            <p>3. On the home screen, rotate the knob to change the frequency band, and click again to confirm.</p>
+            <p>4. Because the case is very small,so the volume output is low after the earphone is inserted, which is a normal phenomenon, and the external audio can be connected to reach a larger volume.</p>
+        </div>
+        <div>
+            <span><b>Upgrade Method</b></span>
+            <p>1. Please use Windows 10 system to run [Flash Download Tool.zip]</p>
+            <p>2. Select the [<font color=red>ChipType:ESP32-S3</font>]->[<font color=red>WorkMode:Devoelop</font>]->[<font color=red>LoadModel:USB</font>]</p>
+            <p>3. Select first bin file "<font color=red>xxxx.ino.bootloader.bin</font>" @ "<font color=red>0x0</font>"</p>
+            <p>Select second bin file "<font color=red>xxxx.ino.partions.bin</font>" @ "<font color=red>0x8000</font>"</p>
+            <p>Select third bin file "<font color=red>xxxx.ino.bin</font>" @ "<font color=red>0x10000</font>"</p>
+            <p>4. Just connect the USB Typec, keep the MINI RADIO <font color=red>power on</font>, and wait for ~10 seconds for the computer to find it.</p>
+            <p>5. Set "<font color=red>COM: XXXXX</font>",and click [<font color=red>START</font>]</p>
+            <p>6. After the upgrade is completed, you can enjoy it</p>
+            <p>Tip:<font>If the burning fails and the system cannot be started, don't worry, the ESP32 system will not be destroyed, you just need to re-burn it.</font></p>
+        </div>
+	<div>
+		<span><h1>Help:miniradiohelp@gmail.com</h1></span>
+	</div>
+    </div>
+
+</body>
+
+</html>
